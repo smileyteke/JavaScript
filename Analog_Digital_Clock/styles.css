@@ -1,0 +1,152 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 240px;
+    width: 240px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child{
+    background: linear-gradient(
+        #84fab0,
+        #8fd3f4
+    );
+    left: -90px;
+    top: -20px;
+}
+
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #e6b980,
+        #eacda3
+    );
+    right: -70px;
+    bottom: -60px;
+}
+
+.clock
+{
+    box-sizing: content-box;
+    background-color: rgba(255,255,255,0.07);
+    backdrop-filter: blur(10px);
+    height: 320px;
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 15px solid rgba(255,255,255,0.07);
+    box-shadow: 15px 15px 35px rgba(0,0,0,0.2),
+    inset 0 0 30px rgba(0,0,0,0.4);
+
+}
+#clock2{
+font-size: 150px;
+  width: 900px;
+  margin-top: 10px;
+  text-align: center;
+  border: 2px solid rgb(230, 222, 222);
+  border-radius: 20px;
+  float: right;
+  color: #f1e9e9;
+  background-color: darkturquoise;
+}
+
+img{
+    position: relative;
+}
+
+.hand{
+    position: absolute;
+
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+    transform-origin: bottom;
+}
+.hour{
+    height: 60px;
+    width: 8px;
+    top: 100px;
+    background-color: #ffffff;
+}
+
+.minute{
+    height: 80px;
+    width: 5px;
+    top: 80px;
+    background-color: #84fab0;
+}
+
+.seconds{
+    height: 90px;
+    width: 3px;
+    top: 70px;
+    background-color: #f8fc30;
+}
+
+h1{
+    color: rgb(5, 5, 5);
+    /* margin-top: 20%; */
+    font-size: xxx-large;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.timer{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    margin-left: 3rem;
+    gap: 30px;
+    color:red;
+    margin-top: -5px;
+
+}
+.days{
+    background-color: blanchedalmond;
+    padding: 11px;
+    font-size: 42px;
+}
+
+
+.hours{
+    background-color: blanchedalmond;
+    padding: 11px;
+    font-size: 42px;
+}
+.mins{
+    background-color: blanchedalmond;
+    padding: 11px;
+    font-size: 42px;
+}
+
+.secs{
+    background-color: blanchedalmond;
+    padding: 11px;
+    font-size: 42px;
+}
